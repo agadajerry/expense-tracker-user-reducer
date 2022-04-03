@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    width:60%;
+    margin: 30px auto;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.header{
+    width:100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+
+}
+.header h3{
+    font-size: 18px;
+    color: #494747;
+}
+.header span{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    color:#494747;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+form{
+    width:100%;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+ form input[type =text], input[type=date]{
+     padding: 8px 20px;
+     width:25%;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+ }
+ form input[type =submit]{
+     background-color: orange;
+     padding: 8px 20px;
+     border-radius: 4px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+ input:focus{
+     outline: none;
+ }
+
+ .content  {
+     padding: 20px;
+     background-color: #fff;
+     margin-top: 10px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .content .main-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+ }
+ .content .main-content input[type=submit]{
+     margin-right: 20px;
+     padding: 8px 20px;
+     border-radius: 4px;
+     border-radius: 4px;
+     background-color: red;
+     color: #fff;
+     font-size: 14px;
+     border: none;
+     cursor: pointer;
+ }
+
+ .content .amount-content{
+     width:45%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ @media(max-width:1300px){
+     .container{
+         width:100%;
+     }
+
+     .content .main-content{
+        width: 100%;
+        margin:10px;
+     }
+     form{
+         flex-direction: column;
+     }
+     form input[type =text], input[type=date]{
+         width: 100%;
+         margin: 10px 0;
+     }
+     .content{
+         width: 100%;
+     }
+ }
